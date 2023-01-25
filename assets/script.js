@@ -1,6 +1,6 @@
 var key = "71ab138a380e407b27c85c82c67d4dda";
 var city  = "Kansas City"
-var cityList = $("#city-list");
+
 
 // add curent date //
 // function FormatDay(date){
@@ -15,6 +15,8 @@ var cityList = $("#city-list");
 //     return dayOutput;
 
 //
+
+
 var weatherUrl = `https://api.openweathermap.org/data/2.5/weather?appid=${key}&q=Kansas+City&units=imperial`;
 fetch (weatherUrl).then(response=> {
     return response.json()
@@ -26,6 +28,18 @@ fetch (weatherUrl).then(response=> {
 //Added curent date/month/year
 function displyCurentWeather(data) {
 $(".cardTodayDate").text(dayjs.unix(data.dt).format("M/D/YYYY"))
+ 
 
+let tempEl = document.createElement("h2");
+let humidityEl = document.createElement("h2");
+let windEl = document.createElement("h2");
+tempEl.textContent = `Temperature: ${data.main.temp} °F`
+humidityEl.textContent = `Humidity: ${data.main.humidity} % `
+windEl.textContent = ` Wind Speed: ${data.wind.speed} MPH`
+let icon = document.createElement("img")
+var iconUrl = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+icon.setAttribute("src", iconUrl)
+
+$(".cardBodyToday").append(icon, tempEl,humidityEl,windEl,);
 
 }

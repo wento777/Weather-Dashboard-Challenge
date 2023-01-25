@@ -24,87 +24,95 @@
     <h1>Weather Dashboard</h1>
 				<div class="container-fluid mainCon">
                     
-                    <!--beginning of row 1-->
-					<div class="row">
+  <!--beginning of row 1-->
+	<div class="row">
 
-                        <!--beginning of col 1 in row 1-->
-                        <div class="col-2 m-2 bg-light">
-                            <h2>Search for a City:</h2>
+   <!--beginning of col 1 in row 1-->
+    <div class="col-2 m-2 bg-light">
+    <h2>Search for a City:</h2>
 
-                            <div class="input-group mb-3">
-								<input type="text" class="form-control textVal" placeholder="Kansas City...">
-								<div class="input-group-append btnPar">
-									<button class="btn btn-primary search" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
+     <div class="input-group mb-3">
+			<input type="text" class="form-control textVal" placeholder="Kansas City...">
+				<div class="input-group-append btnPar">
+				<button class="btn btn-primary search" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
 								</div>
 							</div>
-                            <!--add history cities box-->
+          <!--add history cities box-->
 
-                            <div class="card" style="width: 10rem;">
-                                <ul id="city-list" class="list-group list-group-flush">
-                                </ul>
-                            </div>
-                          </div>
+       <div class="card" style="width: 10rem;">
+        <ul id="city-list" class="list-group list-group-flush">
+        </ul>
+         </div>
+      </div>
 
-                          <!--add today weather col-->
+     <!--add today weather col-->
 
-                          <div class="col-12 col-md-9 col-xl-19 colTwo">
+      <div class="col-12 col-md-9 col-xl-19 colTwo">
 
-							<div class="row today">
+			<div class="row today">
 
-								<div class="card bg-light mb-5 " style="max-width: 400px;">
-                                    <h2>Kansas City</h2>
-									<h2 class="card-header cardTodayCityName"></h2>
-                                    <!-- <h2> Day/Month/Year </h2> -->
-									<h2 class="card-header cardTodayDate"></h2>
-									<img class="icons"/>
-									<div class="card-body cardBodyToday">
+			<div class="card bg-light mb-4 " style="max-width: 400px;">      
+           <h2>Kansas City</h2>
+				<h2 class="card-header cardTodayCityName"></h2>
+     <!-- <h2> Day/Month/Year </h2> -->
+				<h2 class="card-header cardTodayDate"></h2>
+				<img class="icons"/>
+				<div class="card-body cardBodyToday">
+        </div>
+
+      </div>
+
+   </div>
+
+          <div class="row fiveForecast"></div>
+
+	</div>
                         
-<!--                                      
-                                    <h2>temp:</h2>
-                                    <h2>humidity:</h2>
-                                    <h2>wind speed:</h2>
-                                   <h2>uv index:</h2>  -->
-                                </div>
-                             </div>
-                             </div>
+                                     
+          <!--<h2>temp:</h2>
+      <h2>humidity:</h2>
+     <h2>wind speed:</h2>
+     <h2>uv index:</h2>  -->
+       <!-- </div> -->
+       <!-- </div> -->
+       
 
-                             <!--add 5 day forecast -->
+      <!--add 5 day forecast -->
 
-                            <br>  
+        <!-- <br>  
                         
-                             <div class="row-12">
-                                 <h3>5-Day Forecast:</h3>
-                             </div>
+       <div class="row-12">
+      <h3>5-DayForecast:</h3>
+        </div>
 
-                             <!--add boxes row-->
-                             <br>
-                              <div id ="boxes" class="row">
-                                <!--box 1-->
-                                <div id="box2" class="col-2 m-1 bg-primary">
-                                    <h4>1 day</h4> 
-                                    
+      add boxes row-->
+      <!-- <br>
+       <div id ="boxes" class="row"> -->
+        <!--box 1-->
+         <!-- <div id="box2" class="col-2 m-1 bg-primary">
+         <h4>1 day</h4> 
+             -->
                                 
-                                
-                                  </div> 
-                                  <!--box2-->
-                                    <div class="col-2 m-1 bg-primary"> 
-                                  <h4>2 day</h4>
-                             </div> 
-                       <!-- Blue box 3-->
-                   <div class="col-2 m-1 bg-primary">
-                  <h4>3 day</h4>
-          
-                </div> 
-                     <!-- Blue box 4 -->
-                 <div class="col-2 m-1 bg-primary">
-                  <h4>4 day</h4> 
+<!--                                 
+      </div>  -->
+     <!--box2-->
+   <!-- <div class="col-2 m-1 bg-primary"> 
+ <h4>2 day</h4>
+       </div>  -->
+   <!-- Blue box 3
+    <div class="col-2 m-1 bg-primary">
+       <h4>3 day</h4>
+        </div>  -->
+        <!--Blue box 4 -->
+          <!-- <div class="col-2 m-1 bg-primary">
+       <h4>4 day</h4> 
          
-               </div> 
-             <!-- Blue box 5 -->
-            <div class="col-2 m-1 bg-primary"> 
+       </div>  -->
+      <!-- Blue box 5 -->
+       <!-- <div class="col-2 m-1 bg-primary"> 
            <h4> 5 day</h4>
            </div> 
-         </div>
+         </div>  --> 
   <script
          src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/dayjs.min.js"
          integrity="sha512-0fcCRl828lBlrSCa8QJY51mtNqTcHxabaXVLPgw/jPA5Nutujh6CbTdDgRzl9aSPYW/uuE7c4SffFUQFBAy6lg=="
