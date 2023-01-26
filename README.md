@@ -27,7 +27,10 @@ Third-party APIs allow developers to access their data and functionality by maki
  - To get this project up and running, you can follow the deployment link.
 
 
-  Here is a link to the deployed application:
+https://github.com/wento777/Weather-Dashboard-Challenge
+ 
+ 
+ Here is a link to the deployed application:
 
 https://wento777.github.io/Weather-Dashboard-Challenge/
 
@@ -83,6 +86,7 @@ THEN I am again presented with current and future conditions for that city
 
 The following image shows the web application's appearance and functionality:
 
+![Screenshot (71)](https://user-images.githubusercontent.com/70625665/214779589-c2dbf7af-c292-40d2-9810-0f8ab5b14f57.png)
 
 # Author
 
